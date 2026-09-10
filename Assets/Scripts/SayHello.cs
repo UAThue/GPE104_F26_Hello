@@ -11,7 +11,7 @@ public class SayHello : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Debug.Log("Hello! Wassup?");
+        Debug.Log("Hello! How are you?");
     }
 
     // Update is called once per frame
