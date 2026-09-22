@@ -227,6 +227,8 @@ GameObject:
   - component: {fileID: 559762601}
   - component: {fileID: 559762600}
   - component: {fileID: 559762602}
+  - component: {fileID: 559762603}
+  - component: {fileID: 559762604}
   m_Layer: 0
   m_Name: starShip
   m_TagString: Untagged
@@ -321,6 +323,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PawnSpaceship
   controller: {fileID: 1326181857}
+  moveSpeed: 3
+  turnSpeed: 180
+--- !u!114 &559762603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559762599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd286c746e0dd2e4680bfa892561ae4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Health
+  currentHealth: 100
+  maxHealth: 100
+--- !u!114 &559762604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559762599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa1c0f9ff427b274f9b2661501e9c915, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DeathDestroy
 --- !u!1 &851177334
 GameObject:
   m_ObjectHideFlags: 0
