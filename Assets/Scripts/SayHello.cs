@@ -1,7 +1,12 @@
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class SayHello : MonoBehaviour
 {
+    public TextMeshProUGUI textBox;
+    public Image healthBar;
+
     // Awake runs as soon as the object is created
     void Awake()
     {
@@ -11,7 +16,7 @@ public class SayHello : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Debug.Log("Hello! How are you?");
+       
     }
 
     // Update is called once per frame
@@ -20,4 +25,14 @@ public class SayHello : MonoBehaviour
         
     }
 
-}
+    public void SaySomething()
+    {
+        Debug.Log("Hello! How are you?");
+
+        // Make our on screen text say "HELLO!"
+        textBox.text = "Hello!";
+
+        healthBar.fillAmount = 0.5f;
+    }
+        
+ }
